@@ -1,11 +1,4 @@
-public class SelectionSort {
-
-  public static void log(int[] arr) {
-    for(int i=0;i<arr.length;i++) {
-      System.out.print(arr[i]+ " ");
-    }
-    System.out.println(" ");
-  }
+public class SelectionSort extends Utilities {
 
   public static int min(int[] arr, int start) {
     int min = 2147483647;
