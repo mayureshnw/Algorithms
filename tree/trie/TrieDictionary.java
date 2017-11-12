@@ -70,7 +70,6 @@ class TrieDictionary {
     }
 
 		for(int i=0;i<arr.size();i++) {
-			System.out.println("inserting index: "+i);
 			this.insert(arr.get(i));
 		}
 	}
@@ -79,9 +78,6 @@ class TrieDictionary {
 		String keys[] = {"the", "a", "there", "answer", "any","by", "bye", "their"};
 		TrieDictionary dict = new TrieDictionary();
 		dict.importAndIndex(".\\words.txt");
-		// for(int i=0;i<keys.length;i++) {
-		// 	dict.insert(keys[i]);
-		// }
 
 		for(int i=0;i<keys.length;i++) {
 			System.out.println(keys[i]+" "+dict.search(keys[i]));
